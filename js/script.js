@@ -89,5 +89,5 @@ function getevents() {
     });
     var snippet = document.getElementById('snippet');
 
-    snippet.innerText= "<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js'></script><link rel='stylesheet' href='https://cdn.rawgit.com/mhennigEB/Event-List-Widget/e62b4aa2/css/snippet.css'><div id='org_id' style='display:none'>"+org_id+"</div><div id='events'></div><div class='eb-link'><i><a href='http://www.eventbrite.com' target=_blank>powered by Eventbrite</a></i></div><script src='https://cdn.rawgit.com/mhennigEB/Event-List-Widget/615271fb/js/snippet-script.js' onload='getevents()'></script>"
+    snippet.innerText= "<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js'></script><link rel='stylesheet' href='https://cdn.rawgit.com/mhennigEB/Event-List-Widget/562a3d90/css/snippet.css'><div id='org_id' style='display:none'>"+org_id+"</div><div id='events'></div><div class='eb-link'><i><a href='http://www.eventbrite.com' target=_blank>powered by Eventbrite</a></i></div><script src='https://cdn.rawgit.com/mhennigEB/Event-List-Widget/615271fb/js/snippet-script.js' onload='getevents()'></script>"
 }
