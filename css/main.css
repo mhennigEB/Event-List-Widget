@@ -1,9 +1,7 @@
+/* Demo Page */
+
 body {
     font-family: 'Benton Sans', sans-serif;
-}
-
-.input {
-    margin-bottom: 15px;
 }
 
 .jumbotron {
@@ -13,6 +11,18 @@ body {
     text-align: center;
     color: white;
 }
+
+.input {
+    margin-bottom: 15px;
+}
+
+#snippet {
+    border: 1px solid grey;
+    background-color: #ff80002d;
+    font-size: 0.7em;
+}
+
+/* Event Output */
 
 .eventList {
     margin: 45px 10px 5px;
@@ -38,16 +48,16 @@ body {
     text-decoration: none;
 }
 
-.eb-link {
-    font-size: 0.8em;
+#wrapper2 {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;  
 }
 
-.btn-action {
-    background-color:#1390a7;
-    color: white;
-    padding: 4px 24px;
-    margin-bottom: 20px;
-    display: block;
+.info {
+    padding: 5px 10px 10px 10px;
+    margin-top: 10px;
+    font-size: 1em;
 }
 
 .btn-tickets {
@@ -66,29 +76,14 @@ body {
     background-color: #fdb344;
 }
 
-.btn-copy {
+.eb-link {
+    font-size: 0.8em;
+}
+
+.btn-action {
     background-color:#1390a7;
     color: white;
     padding: 4px 24px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     display: block;
 }
-  
-.info {
-    padding: 5px 10px 10px 10px;
-    margin-top: 10px;
-    font-size: 1em;
-}
-
-#wrapper2 {
-    margin-left: 5px;
-    margin-top: 5px;
-    padding: 10px;  
-}
-
-#snippet {
-    border: 1px solid grey;
-    background-color: #ff80002d;
-    font-size: 0.7em;
-}
-
