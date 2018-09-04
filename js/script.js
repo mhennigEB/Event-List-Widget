@@ -5,8 +5,7 @@ function getevents() {
         window.alert("Please enter an organizer ID!");
     }
     var token = '3ZWVQM2G5TPBMVUR4D2N';
-    /* var location = document.getElementById("location").value;
-    console.log(location); */
+    // var location = document.getElementById("location").value; 
 
     // org_id = "6014006407"; // Instant Version
     
@@ -17,19 +16,7 @@ function getevents() {
         events.innerHTML = "<i>Loading events, please stand by...</i>";
     }
 
-    var call = 'https://www.eventbriteapi.com/v3/events/search/?organizer.id='+org_id+'&expand=venue&sort_by=date&token='+token;
-
-    /* if(location == " "){
-        var call = 'https://www.eventbriteapi.com/v3/events/search/?organizer.id='+org_id+'&expand=venue&sort_by=date&token='+token;
-    } else {
-        var call = 'https://www.eventbriteapi.com/v3/events/search/?sort_by=date&location.address='+location+'&organizer.id='+org_id+'&expand=venue&sort_by=date&token='+token;
-    } */
-    
-    // via Org Profile
-    //$.get('https://www.eventbriteapi.com/v3/events/search/?organizer.id='+org_id+'&expand=venue&sort_by=date&token='+token,
-
-    // Org Profile with location  
-    // $.get('https://www.eventbriteapi.com/v3/events/search/?sort_by=date&location.address='+location+'&organizer.id='+org_id+'&expand=venue&sort_by=date&token='+token, 
+    var call = 'https://www.eventbriteapi.com/v3/events/search/?organizer.id='+org_id+'&expand=venue&sort_by=date&token='+token; 
 
     $.get(call,
 
