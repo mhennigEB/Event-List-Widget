@@ -1,10 +1,5 @@
 function getevents() {
 
-    // Snippet Version
-    /* var org_id = document.getElementById('org_id').innerText;
-    var token = document.getElementById('api_token').innerText; */
-
-    // Demo Version
     var org_id = document.getElementById('org_id').value;
     if(org_id==""){ 
         window.alert("Please enter an organizer ID!");
@@ -36,11 +31,6 @@ function getevents() {
     // Org Profile with location  
     // $.get('https://www.eventbriteapi.com/v3/events/search/?sort_by=date&location.address='+location+'&organizer.id='+org_id+'&expand=venue&sort_by=date&token='+token, 
 
-    // via my owned events, regardless of org
-    // $.get('https://www.eventbriteapi.com/v3/users/me/owned_events/?status=live&expand=venue&token='+token, 
-
-    // GET /organizations/:id/events/ via organization
-
     $.get(call,
 
     function(res) {
@@ -50,13 +40,6 @@ function getevents() {
                 var event = res.events[i];
                 var eventTime = moment(event.start.local).format('MMMM Do YYYY, h:mm A');
                 var event_name = event.name.text
-                
-                // Event description (unused)
-                /* if (event.description.text == null){
-                var event_desc = "";
-                } else {
-                var event_desc = event.description.text
-                } */
                     
                 if (event.venue.address.city == null){
                 var city = "N/A";
