@@ -20,6 +20,8 @@ body {
     border: 1px solid grey;
     background-color: #ff80002d;
     font-size: 0.7em;
+    overflow-wrap: break-word;
+    padding: 7px;
 }
 
 /* Event Output */
