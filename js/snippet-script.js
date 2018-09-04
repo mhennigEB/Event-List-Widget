@@ -47,7 +47,4 @@ function getevents() {
             events.innerHTML= "<p>Sorry, there are no upcoming events.</p>";
         }
     });
-    var snippet = document.getElementById('snippet');
-
-    snippet.innerText= "<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js'></script><link rel='stylesheet' href='https://cdn.rawgit.com/mrh-student/Event-List-Widget/bcfa4df8/css/main.css'><div id='org_id' style='display:none'>"+org_id+"</div><div id='events'></div><div class='eb-link'><i><a href='http://www.eventbrite.com' target=_blank>powered by Eventbrite</a></i></div><script src='https://cdn.rawgit.com/mrh-student/Event-List-Widget/a396898c/js/script.js' onload='kk()'></script>"
 }

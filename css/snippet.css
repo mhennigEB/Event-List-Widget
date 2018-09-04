@@ -1,0 +1,63 @@
+.eventList {
+    margin: 45px 10px 5px;
+    font-size: 0.9em;
+    width: 450px;
+    height: 225px;
+  }
+  
+.title, .info {
+    max-width: 260px;
+    max-height: 70px;
+    overflow: hidden;
+    background-color: rgba(255, 250, 250, 0.8);
+}
+  
+.title {
+    padding: 10px 10px 5px 10px;
+    font-size: 1.3em;
+}
+
+.title a, .title a:hover, .eb-link a, .eb-link a:hover {
+    color: #1390a7;
+    text-decoration: none;
+}
+
+#wrapper2 {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;  
+}
+
+.info {
+    padding: 5px 10px 10px 10px;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.btn-tickets {
+    background-color: #ff8000;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 7px;
+}
+
+.btn-tickets:hover {
+    background-color: #fdb344;
+}
+
+.eb-link {
+    font-size: 0.8em;
+}
+
+.btn-action {
+    background-color:#1390a7;
+    color: white;
+    padding: 4px 24px;
+    margin-bottom: 20px;
+    display: block;
+}
