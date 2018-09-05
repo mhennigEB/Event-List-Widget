@@ -25,32 +25,8 @@ function getevents() {
             var s = "";
             for(i=0;i<res.events.length;i++) {
                 var event = res.events[i];
-                var eventTime = moment(event.start.local).format('MMMM Do YYYY, h:mm A');
-                var event_name = event.name.text
-                    
-                if (event.venue.address.city == null){
-                var city = "N/A";
-                } else {
-                var city = event.venue.address.city
-                }
-
-                if (event.venue.address.address_1 == null){
-                var ven_address = "";
-                } else {
-                var ven_address = ", " + event.venue.address.address_1  
-                }
-
-                if (event.logo == null){
-                var img_url = "https://upload.wikimedia.org/wikipedia/commons/1/12/Testbild.png";
-                } else {
-                var img_url = event.logo.url;
-                }
-                console.dir(event);
-                s += "<div class='eventList' style='background-image: url("+img_url+"); background-size: cover; background-repeat: no-repeat, background-position: center'><div id='wrapper2'>";
-                s += "<div class='title'><a href='" + event.url + "' target=_blank>" + event_name + "</a></div>";
-                s += "<div class='info'><b>" + eventTime + "</b> <br> in <b>" + city + "</b>" + ven_address + "</div>";
-                s += "<p><a href='" + event.url + "' target =_blank> <button class='btn-tickets'>Get Tickets</button></a></p>";
-                s += "</div></div>";
+                var eventHtml = buildEventCard(event);
+                s += eventHtml;
             }
             events.innerHTML= s;
         } else {
