@@ -63,3 +63,10 @@
     margin-bottom: 20px;
     display: block;
 }
+
+.btn-align-right {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+}
