@@ -75,13 +75,13 @@ function buildEventCard(event) {
                   <div class="eds-media-card-content__sub-content-cropped">
                     <div class="eds-text-bs--fixed eds-text-color--grey-600 eds-l-mar-top-1">
                       ${location} ${city}
-                      <a href="${url}" target=_blank>
-                        <button class="eds-btn eds-btn--button eds-btn--fill btn-align-right" type="button">
-                        Get Tickets
-                        </button>
-                      </a>
                     </div>
                     <div class="eds-text-bs--fixed eds-text-color--grey-600 eds-l-mar-top-1" />
+                        <a href="${url}" target=_blank>
+                            <button class="eds-btn eds-btn--button eds-btn--fill btn-align-right" type="button">
+                            Get Tickets
+                            </button>
+                        </a>
                   </div>
                 </div>
               </div>
